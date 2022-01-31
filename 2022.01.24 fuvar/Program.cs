@@ -34,6 +34,23 @@ namespace _2022._01._24_fuvar
             }
 
             Console.WriteLine($"4.feladat:{db} fuvar alatt {bevétel}$");
+            //5.
+            int bankkártya = 0;
+            int készpénz = 0;
+            foreach (var f in fuvarok)
+            {
+                if (f.fizetésmód == "bankkártya")
+                {
+                    bankkártya++;
+
+                }
+                if (f.fizetésmód == "készpénz")
+                {
+                    készpénz++;
+
+                }
+                Console.WriteLine()
+            }
 
             Console.ReadKey();
         }
