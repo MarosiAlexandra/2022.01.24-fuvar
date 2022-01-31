@@ -20,7 +20,7 @@ namespace _2022._01._24_fuvar
         {
             string[] t = sor.Split(';');
             TaxiID = int.Parse (t[0]);
-            indulás = t[1];
+            indulás =t[1];
             időtartam = int.Parse(t[2]);
             távolság = double.Parse(t[3]);
             viteldíj = double.Parse(t[4]);
