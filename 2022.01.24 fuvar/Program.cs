@@ -49,8 +49,16 @@ namespace _2022._01._24_fuvar
                     készpénz++;
 
                 }
-                Console.WriteLine()
+                Console.WriteLine($"3.feladat: {fuvarok.Count} fuvar");
             }
+            //6.
+            double ÖsszMérföld = 0;
+            foreach (var f in fuvarok)
+            {
+                ÖsszMérföld += f.távolság;
+            }
+            Console.WriteLine($"6.feladat: {ÖsszMérföld * 1.6:0.00}km");
+
 
             Console.ReadKey();
         }
